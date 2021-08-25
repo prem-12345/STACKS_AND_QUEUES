@@ -47,6 +47,25 @@ public class Queues {
         return count;
     }
 
+    /**
+     * UC4 Ability to dequeue from the begining .
+     *
+     * @author prem
+     * @version 13.4
+     * @since 25/08/2021
+     */
+
+    public int deQueue(){
+        if(this.front == null){
+            System.out.println("Empty Queue.");
+            return -1;
+        }
+        Node temp = this.front;
+        this.front = this.front.next;
+        return temp.data;
+    }
+
+
     public void display() {
         Node temp = front;
         while (temp != null) {

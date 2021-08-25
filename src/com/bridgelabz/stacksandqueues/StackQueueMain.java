@@ -17,6 +17,11 @@ public class StackQueueMain {
         queue.enQueue(70);
         queue.display();
 
+        System.out.println(queue.deQueue());
+        System.out.println(queue.deQueue());
+        System.out.println(queue.deQueue());
+        queue.display();
+
 
 
     }
