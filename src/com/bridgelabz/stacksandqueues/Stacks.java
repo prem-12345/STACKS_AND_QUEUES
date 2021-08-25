@@ -41,6 +41,35 @@ public class Stacks {
         System.out.println("Element Push: " + top.data);
     }
 
+    /**
+     * UC2 Ability to peak and pop from the stack till its empty.
+     *
+     * @author prem
+     * @version 13.2
+     * @since 25/08/2021
+     */
+
+    public int peak() {
+        if (isEmpty()) {
+            System.out.println("Empty Stack");
+            return -1;
+        }
+        return top.data;
+    }
+
+    public int pop() {
+        int poped;
+
+        if (isEmpty()) {
+            System.out.println("Empty Stack.");
+            return -1;
+        }
+        poped = top.data;
+        top = top.next;
+
+        return poped;
+    }
+
     public void display() {
         Node temp = top;
         while (temp != null) {
