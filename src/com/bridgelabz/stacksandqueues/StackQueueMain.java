@@ -11,5 +11,11 @@ public class StackQueueMain {
          * @since 25/08/2021
          */
 
+        Stacks stack = new Stacks();
+        stack.push(70);
+        stack.push(30);
+        stack.push(56);
+        stack.display();
+
     }
 }
