@@ -70,6 +70,16 @@ public class Stacks {
         return poped;
     }
 
+    public int size(){
+        int count = 0;
+        Node temp = top;
+        while (temp!=null){
+            count++;
+            temp=temp.next;
+        }
+        return count;
+    }
+
     public void display() {
         Node temp = top;
         while (temp != null) {
